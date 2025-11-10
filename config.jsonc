@@ -29,33 +29,36 @@
 
   "modules": [
     "break",
-
-    {
-      "type": "title",
-      "format": "{6}{7}{#yellow}{8}{#}"
-    },
-    "separator",
     {
       "type": "os",
-      "format": "{#white}{4}{#} {?6}({#magenta}{6}{#}){?}"
+      "key": "os",
+      "format": "{#white}Tranzzite{#} {?6}({#magenta}{6}{#}){?}"
     },
-    "kernel",
-    "de",
+    {
+      "type": "kernel",
+      "key": "kernel"
+    },
+    {
+     "type": "de",
+     "key": "desktop"
+    },
     "break",
 
     {
       "type": "cpu",
+      "key": "cpu",
       "format": "{name}"
     },
         {
             "type": "gpu",
+            "key": "gpu",
             "format": "{name}"
         },
 	    "break",
     {
       "type": "memory",
       "key": "ram",
-      "format": "{percentage-bar} {used} {#magenta}({percentage}) {#white}ddr5"
+      "format": "{percentage-bar} {used} {#magenta}({percentage}) {#white} ddr5"
     },
     {
       "type": "disk",
