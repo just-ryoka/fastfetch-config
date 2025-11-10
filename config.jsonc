@@ -55,7 +55,7 @@
     {
       "type": "memory",
       "key": "ram",
-      "format": "{percentage-bar} {used} {#magenta}({percentage}) {#white}ddr4"
+      "format": "{percentage-bar} {used} {#magenta}({percentage}) {#white}ddr5"
     },
     {
       "type": "disk",
