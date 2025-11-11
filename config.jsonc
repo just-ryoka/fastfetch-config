@@ -1,11 +1,91 @@
-{
+
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
 
   "logo": {
-        "source": "/home/whyoolw/.config/fastfetch/logo.jsonc",
+        "source": "/home/user/.config/fastfetch/logo.jsonc",
     "padding": {
-	    "top": 2,
-            "left": 3
+	    "top": 1,
+            "left": 2
+    }
+  },
+
+  "display": {
+    "bar": {
+      "width": 13
+    },
+    "percent": {
+      "type": 3,
+      "color": {
+        "green": "magenta",
+        "yellow": "magenta"
+      }
+    },
+    "key": {
+      "width": 15
+    },
+    "color": "white",
+    "separator": ":"
+  },
+
+  "modules": [
+    "break",
+    {
+      "type": "os",
+      "key": "os",
+      "format": "{#white}Tranzzite{#} {?6}({#magenta}{6}{#}){?}"
+    },
+    {
+      "type": "kernel",
+      "key": "kernel"
+    },
+    {
+     "type": "de",
+     "key": "desktop"
+    },
+    "break",
+
+    {
+      "type": "cpu",
+      "key": "cpu",
+      "format": "{name}"
+    },
+        {
+            "type": "gpu",
+            "key": "gpu",
+            "format": "{name}"
+        },
+	    "break",
+    {
+      "type": "memory",
+      "key": "ram",
+      "format": "{percentage-bar} {used} {#magenta}({percentage}) {#white} ddr5"
+    },
+    {
+      "type": "disk",
+      "key": "volume",
+      "format": "{size-percentage-bar} {size-used} {#yellow}({size-percentage}) {#white}{filesystem}"
+    },
+    "break",
+    {
+      "type": "terminal",
+      "key": "terminal"
+    },
+    {
+      "type": "uptime",
+      "key": "uptime"
+    },
+     {
+            "type": "packages",
+             "key": "packages"
+        },
+    "break",
+            {
+            "type": "colors",
+            "symbol": "circle"
+        },
+	"break"
+  ]
+}     "left": 3
     }
   },
 
